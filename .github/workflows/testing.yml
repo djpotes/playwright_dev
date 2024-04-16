@@ -13,3 +13,4 @@ jobs:
         with:
            workflow: tests.yml
            repo: djpotes/playwright_examples
+           token: "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"
