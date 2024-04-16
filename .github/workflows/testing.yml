@@ -1,0 +1,15 @@
+name: Test
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  RunE2ETest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Invoke workflow in another repo with inputs
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+           workflow: tests.yml
+           repo: playwright_examples
